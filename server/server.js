@@ -38,4 +38,4 @@ db.once('open', () => {
   });
 });}
 
-start();
+startApolloServer(typeDefs, resolvers);
