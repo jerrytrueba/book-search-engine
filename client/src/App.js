@@ -26,8 +26,8 @@ function App() {
       <>
         <Navbar />
         <Routes>
-          <Route exact path='/' component={SearchBooks} />
-          <Route exact path='/saved' component={SavedBooks} />
+          <Route exact path='/' element={<SearchBooks/>} ></Route>
+          <Route exact path='/saved' element={<SavedBooks/>}></Route>
           <Route render={() => <h1 className='display-2'>Wrong Page!</h1>} />
         </Routes>
       </>
